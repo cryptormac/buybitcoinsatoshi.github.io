@@ -1,7 +1,3 @@
-"use strict";
-
-/*global jQuery */
-
 $(document).ready(function (){
 $(".currencyField").keyup(function (){ //input[name='calc']
  let convFrom;
