@@ -39,11 +39,11 @@ tags: ['satoshis to usd', 'satoshi to usd calculator']
             <div class="card-body">
               <p class="card-text">
                 <a href="https://www.coinbase.com/join/5a2bd3af9af50d029cd3f2d3">Coinbase</a>
-                <ul>
-                  <li>Ability to trade fast with high limitations</li>
-                  <li>Supports majority cryptocurrencies</li>
-                </ul>
               </p>
+              <ul>
+                <li>Ability to trade fast with high limitations</li>
+                <li>Supports majority cryptocurrencies</li>
+              </ul>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a class="btn btn-lg btn-success" href="https://www.coinbase.com/join/5a2bd3af9af50d029cd3f2d3" role="button">Buy Now</a>
@@ -58,11 +58,11 @@ tags: ['satoshis to usd', 'satoshi to usd calculator']
             <div class="card-body">
               <p class="card-text">
                 <a href="https://www.binance.com/en/register?ref=17120908">Binance</a>
-                <ul>
-                  <li>Reliable and trusted</li>
-                  <li>Highest limits for buying with Credit Card</li>
-                </ul>
               </p>
+              <ul>
+                <li>Reliable and trusted</li>
+                <li>Highest limits for buying with Credit Card</li>
+              </ul>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a class="btn btn-lg btn-success" href="https://www.binance.com/en/register?ref=17120908" role="button">Buy Now</a>
@@ -77,11 +77,11 @@ tags: ['satoshis to usd', 'satoshi to usd calculator']
             <div class="card-body">
               <p class="card-text">
                 <a href="https://www.bitfinex.com/?refcode=29caDDHSO">Bitfinex</a>
-                <ul>
-                  <li>Very easy to get setup</li>
-                  <li>Simple and clean interface to use daily</li>
-                </ul>
               </p>
+              <ul>
+                <li>Very easy to get setup</li>
+                <li>Simple and clean interface to use daily</li>
+              </ul>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a class="btn btn-lg btn-success" href="https://www.bitfinex.com/?refcode=29caDDHSO" role="button">Buy Now</a>
@@ -100,26 +100,32 @@ tags: ['satoshis to usd', 'satoshi to usd calculator']
                 Satoshi Nakamoto published The paper, “Bitcoin: A Peer-to-Peer Electronic Cash System”,
                 where he described the use of a peer-to-peer network as a solution to the problem of double-spending.
               </p>
-               <p class="card-text"><h2 class="card-title">1. How many zeros in Bitcoin does Satoshi have?</h2>
+              <h5 class="card-title">1. How many zeros in Bitcoin does Satoshi have?</h5>
+               <p class="card-text">
                 A satoshi is a 100 millionth of a bitcoin and is the tiniest unit of Bitcoin. For every Bitcoin there are 100,000,000 units where
                 every unit of Bitcoin is referred to as satoshi.
               </p>
-               <p class="card-text"><h2 class="card-title">2. Why are the digits in Bitcoin called Satoshi?</h2>
+              <h5 class="card-title">2. Why are the digits in Bitcoin called Satoshi?</h5>
+               <p class="card-text">
                 The digits after the dot in Bitcoin is called satoshi because of the increase in price of Bitcoin and to faciliate smaller transactions.
                 Cryptocurrency users in the community named it after the inventor of Bitcoin.
                </p>
                <img src="assets/images/satoshi-to-usd.png" class="img-fluid" alt="satoshi-usd">
-               <p class="card-text"><h2 class="card-title">3. Where is the founder of Bitcoin?</h2>
+               <br>
+               <h5 class="card-title">3. Where is the founder of Bitcoin?</h5>
+               <p class="card-text">
                 Nobody for sure knows where the inventor of Bitcoin Satoshi Nakamoto is presently. He might dead or alive.
-                Nobody even knows if he was male, female or a group of people.</p>
+                Nobody even knows if he was male, female or a group of people.
               </p>
-              <p class="card-text"><h2 class="card-title">4. Are satoshi's accepted as a form of payment?</h2>
-               Yes, satoshis are an accepted form of payment at many places of business including restaurants, coffee shops, hardware stores and many more.</p>
+              <h5 class="card-title">4. Are satoshi's accepted as a form of payment?</h5>
+              <p class="card-text">
+               Yes, satoshis are an accepted form of payment at many places of business including restaurants, coffee shops, hardware stores and many more.
              </p>
-             <p class="card-text"><h2 class="card-title">5. Why is USD the most popular way to convert satoshi?</h2>
-              Approximately 98% of cryptocurrency exchanges use the United States Dollar to trade. Very few use the European and localized currencies.</p>
+             <h5 class="card-title">5. Why is USD the most popular way to convert satoshi?</h5>
+             <p class="card-text">
+              Approximately 98% of cryptocurrency exchanges use the United States Dollar to trade. Very few use the European and localized currencies.
             </p>
-            <p class="card-text"><h2 class="card-title">6. What are common satoshi to USD conversions?</h2>
+            <p class="card-text">
             <table class="table">
               <tbody>
                 <tr>
@@ -148,42 +154,3 @@ tags: ['satoshis to usd', 'satoshi to usd calculator']
   </div>
 
 </main>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="js/jquery.slim.min.js"><\/script>')</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-  $.get( "https://api.coindesk.com/v1/bpi/currentprice.json", function( data ) {
-    parsedData = JSON.parse(data)
-
-});
-    $(function()
-    {
-      $("#satoshi-input").bind('input',function(){
-
-        s = $("#satoshi-input").val().toString().replace(/\,/g,'');
-        if (s>=1000)
-        {
-          b = s.toString().split(".");
-          b[0] = b[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")
-          c = b.join('.');
-          $("#satoshi-input").val(c);
-        }
-        if (isNaN(s*2)) $("#btc-sats-one-one").val(0);
-        else
-        {
-          jQuery.get( "https://api.coindesk.com/v1/bpi/currentprice.json", function( data ) {
-            var parsedData = JSON.parse(data)
-            var bitcoinUSD = parsedData.bpi.USD.rate.replace(/\,/g,'') * s
-            var satoshiBitcoinUSD = (bitcoinUSD*0.00000001)
-            q = (satoshiBitcoinUSD).toFixed(3)
-            a = q.toString().split(".");
-            a[0] = a[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")
-            p = a.join('.');
-            $("#satoshi-usd-output").val(p);
-        });
-
-        }
-      });
-    });
-  </script>
